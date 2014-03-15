@@ -17,7 +17,7 @@ log = output
 
 # If didn't fetch new file from API then just quit without email.
 if result == 100
-    #exit
+    exit
 end
 
 # Create email.
