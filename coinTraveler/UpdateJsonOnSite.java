@@ -55,11 +55,13 @@ public class UpdateJsonOnSite {
         }
         
         // Download the newest data from Overpass API.
-        System.out.println("Downloading the newest data from Overpass API.");
+        System.out.println("Downloading the newest data from Overpass API (DE).");
         BufferedReader reader=null;
         String jsonData = null;
         try {
-            URL url = new URL("http://overpass.osm.rambler.ru/cgi/interpreter?data=[out:json];(node[%22payment:bitcoin%22=yes];%3E;);out;");
+            //http://api.openstreetmap.fr/oapi/interpreter?data=[out:json];(node[%22payment:bitcoin%22=yes];%3E;);out;
+            //http://overpass-api.de/api/interpreter?data=[out:json];(node[%22payment:bitcoin%22=yes];%3E;);out;
+            URL url = new URL("http://overpass-api.de/api/interpreter?data=[out:json];(node[%22payment:bitcoin%22=yes];%3E;);out;");
             reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
             PrintWriter out = new PrintWriter(jsonFileToUpload.getAbsolutePath(), "UTF-8");
             
