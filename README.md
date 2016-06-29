@@ -23,3 +23,26 @@ Parameters:
 
 To create a new jar after updating Java code:
 jar cfm ./dist/UpdateJsonOnSite.jar Manifest.txt coinTraveler/UpdateJsonOnSite.class
+
+---
+
+Thanks to Pavol Rusnak for his [CoinMap](http://coinmap.org) which brought this data and concept to my attention.
+
+
+Map Data
+© by OpenStreetMap contributors
+Special thanks to Roland Olbricht for Overpass API
+
+
+Map Icons
+© OpenStreetMap contributors
+Available under Open Database Licence (www.opendatacommons.org/licenses/odbl)
+
+
+Kingpin - Pin Clustering
+Copyright [2013-2014] The Apache Software Foundation
+
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/) and
+Bryan Bonczek (https://github.com/itsbonczek).
+
